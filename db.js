@@ -1,12 +1,6 @@
-const animals = {
-    dog: {
-      type1: 'chihuahua',
-      type2: 'bloodhound',
-      type3: 'german shepherd'
-    },
-    cat: {
-      type1: 'abyssinian',
-      type2: 'dwelf',
-      type3: 'highlander'
-    }
-  };
+module.exports.users = [
+    { name: 'Мария', age: 22 },
+    { name: 'Виктор', age: 30 },
+    { name: 'Анастасия', age: 48 },
+    { name: 'Алексей', age: 51 }
+  ];
