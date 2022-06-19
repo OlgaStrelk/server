@@ -5,9 +5,10 @@ const app = express();
 
 const routes = require('./routes')
 
-
 app.use('/', routes)
+
+routes.get()
 app.listen(PORT, () => {
-  console.log('Ссылка на сервер:');
-  console.log(BASE_PATH);
+  console.log('Все есть')
 });
+
