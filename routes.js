@@ -5,6 +5,9 @@ router.get('/users', (req, res) => {
   })
   
   router.get('/users/:id', (req, res) => {
+    if (!users[req.params.id]) {
+        res.send(`Такого пользователя не существует`)
+    }
     res.send(users[req.params.id])
   })
 
