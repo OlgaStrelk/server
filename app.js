@@ -3,6 +3,7 @@ const { PORT = 3000 } = process.env;
 const app = express();
 const routes = require("./routes");
 const bodyParser = require("body-parser");
+const mongoose = require('mongoose');
 
 // подключаюсь к севреру монго
 mongoose.connect('mongodb://localhost:27017/mydb')
