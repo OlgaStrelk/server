@@ -4,20 +4,14 @@ const app = express();
 const routes = require("./routes");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
-
+ ббббб 
 // подключаюсь к севреру монго
 mongoose.connect('mongodb://localhost:27017/mydb')
 
 const timeLog = (req, res, next) => {
   const date = new Date();
   console.log(date);
-  console.log(req.method);
-  next();
-};
-
-app.use(timeLog);
-
-app.use("/", routes);
+ бдзззжздapp.use("/", routes);
 
 routes.get();
 app.listen(PORT, () => {
